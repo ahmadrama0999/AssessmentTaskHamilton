@@ -9,19 +9,39 @@
 /* Begin PBXBuildFile section */
 		77313E332895B162000D1FA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E322895B162000D1FA7 /* AppDelegate.swift */; };
 		77313E352895B162000D1FA7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E342895B162000D1FA7 /* SceneDelegate.swift */; };
-		77313E372895B162000D1FA7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E362895B162000D1FA7 /* ViewController.swift */; };
 		77313E3C2895B163000D1FA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77313E3B2895B163000D1FA7 /* Assets.xcassets */; };
 		77313E3F2895B163000D1FA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77313E3D2895B163000D1FA7 /* LaunchScreen.storyboard */; };
+		77313E482895B4B0000D1FA7 /* CurrencySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E472895B4B0000D1FA7 /* CurrencySelectionViewController.swift */; };
+		77313E4A2895B4B9000D1FA7 /* CurrencySelectionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E492895B4B9000D1FA7 /* CurrencySelectionInteractor.swift */; };
+		77313E4C2895B4D1000D1FA7 /* CurrencySelectionPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E4B2895B4D1000D1FA7 /* CurrencySelectionPresenter.swift */; };
+		77313E4E2895B4D8000D1FA7 /* CurrencySelectionRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E4D2895B4D8000D1FA7 /* CurrencySelectionRouter.swift */; };
+		77313E502895B4E2000D1FA7 /* CurrencySelectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E4F2895B4E2000D1FA7 /* CurrencySelectionModel.swift */; };
+		77313E5A2895B71E000D1FA7 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E592895B71E000D1FA7 /* View+Extensions.swift */; };
+		77313E652895BAE2000D1FA7 /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E642895BAE2000D1FA7 /* Localization.swift */; };
+		77313E672895BBD6000D1FA7 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E662895BBD6000D1FA7 /* String+Extensions.swift */; };
+		77313E692895BE66000D1FA7 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77313E682895BE66000D1FA7 /* Localizable.strings */; };
+		77313E6C2895C084000D1FA7 /* CommonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E6B2895C084000D1FA7 /* CommonButton.swift */; };
+		77313E6E2895C8BA000D1FA7 /* UnderlinedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E6D2895C8BA000D1FA7 /* UnderlinedTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		77313E2F2895B162000D1FA7 /* HamiltonAssessmentTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HamiltonAssessmentTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77313E322895B162000D1FA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77313E342895B162000D1FA7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		77313E362895B162000D1FA7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		77313E3B2895B163000D1FA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77313E3E2895B163000D1FA7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77313E402895B163000D1FA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77313E472895B4B0000D1FA7 /* CurrencySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionViewController.swift; sourceTree = "<group>"; };
+		77313E492895B4B9000D1FA7 /* CurrencySelectionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionInteractor.swift; sourceTree = "<group>"; };
+		77313E4B2895B4D1000D1FA7 /* CurrencySelectionPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionPresenter.swift; sourceTree = "<group>"; };
+		77313E4D2895B4D8000D1FA7 /* CurrencySelectionRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionRouter.swift; sourceTree = "<group>"; };
+		77313E4F2895B4E2000D1FA7 /* CurrencySelectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionModel.swift; sourceTree = "<group>"; };
+		77313E592895B71E000D1FA7 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		77313E642895BAE2000D1FA7 /* Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localization.swift; sourceTree = "<group>"; };
+		77313E662895BBD6000D1FA7 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		77313E682895BE66000D1FA7 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		77313E6B2895C084000D1FA7 /* CommonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonButton.swift; sourceTree = "<group>"; };
+		77313E6D2895C8BA000D1FA7 /* UnderlinedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlinedTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +74,96 @@
 		77313E312895B162000D1FA7 /* HamiltonAssessmentTask */ = {
 			isa = PBXGroup;
 			children = (
+				77313E6A2895C074000D1FA7 /* Views */,
+				77313E5D2895BA47000D1FA7 /* Utility */,
+				77313E582895B709000D1FA7 /* Extensions */,
+				77313E462895B3E7000D1FA7 /* CurrencySelectionModule */,
 				77313E322895B162000D1FA7 /* AppDelegate.swift */,
 				77313E342895B162000D1FA7 /* SceneDelegate.swift */,
-				77313E362895B162000D1FA7 /* ViewController.swift */,
 				77313E3B2895B163000D1FA7 /* Assets.xcassets */,
 				77313E3D2895B163000D1FA7 /* LaunchScreen.storyboard */,
 				77313E402895B163000D1FA7 /* Info.plist */,
 			);
 			path = HamiltonAssessmentTask;
+			sourceTree = "<group>";
+		};
+		77313E462895B3E7000D1FA7 /* CurrencySelectionModule */ = {
+			isa = PBXGroup;
+			children = (
+				77313E572895B5E7000D1FA7 /* Interactor */,
+				77313E562895B5D7000D1FA7 /* Router */,
+				77313E552895B5CC000D1FA7 /* Presenter */,
+				77313E522895B561000D1FA7 /* ViewController */,
+				77313E4F2895B4E2000D1FA7 /* CurrencySelectionModel.swift */,
+			);
+			path = CurrencySelectionModule;
+			sourceTree = "<group>";
+		};
+		77313E522895B561000D1FA7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77313E472895B4B0000D1FA7 /* CurrencySelectionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		77313E552895B5CC000D1FA7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				77313E4B2895B4D1000D1FA7 /* CurrencySelectionPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		77313E562895B5D7000D1FA7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				77313E4D2895B4D8000D1FA7 /* CurrencySelectionRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		77313E572895B5E7000D1FA7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				77313E492895B4B9000D1FA7 /* CurrencySelectionInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		77313E582895B709000D1FA7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77313E592895B71E000D1FA7 /* View+Extensions.swift */,
+				77313E662895BBD6000D1FA7 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		77313E5D2895BA47000D1FA7 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				77313E632895BAB1000D1FA7 /* Localization */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		77313E632895BAB1000D1FA7 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				77313E642895BAE2000D1FA7 /* Localization.swift */,
+				77313E682895BE66000D1FA7 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		77313E6A2895C074000D1FA7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77313E6B2895C084000D1FA7 /* CommonButton.swift */,
+				77313E6D2895C8BA000D1FA7 /* UnderlinedTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77313E3F2895B163000D1FA7 /* LaunchScreen.storyboard in Resources */,
+				77313E692895BE66000D1FA7 /* Localizable.strings in Resources */,
 				77313E3C2895B163000D1FA7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,9 +237,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77313E372895B162000D1FA7 /* ViewController.swift in Sources */,
+				77313E482895B4B0000D1FA7 /* CurrencySelectionViewController.swift in Sources */,
+				77313E5A2895B71E000D1FA7 /* View+Extensions.swift in Sources */,
+				77313E6C2895C084000D1FA7 /* CommonButton.swift in Sources */,
+				77313E502895B4E2000D1FA7 /* CurrencySelectionModel.swift in Sources */,
+				77313E4C2895B4D1000D1FA7 /* CurrencySelectionPresenter.swift in Sources */,
+				77313E4A2895B4B9000D1FA7 /* CurrencySelectionInteractor.swift in Sources */,
+				77313E652895BAE2000D1FA7 /* Localization.swift in Sources */,
+				77313E6E2895C8BA000D1FA7 /* UnderlinedTextField.swift in Sources */,
 				77313E332895B162000D1FA7 /* AppDelegate.swift in Sources */,
 				77313E352895B162000D1FA7 /* SceneDelegate.swift in Sources */,
+				77313E4E2895B4D8000D1FA7 /* CurrencySelectionRouter.swift in Sources */,
+				77313E672895BBD6000D1FA7 /* String+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
