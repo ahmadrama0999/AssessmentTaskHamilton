@@ -7,11 +7,28 @@
 
 import Foundation
 
-protocol CurrencySelectionPresenterProtocol: NSObject {
+protocol CurrencySelectionPresenterProtocol {
     var interactor: CurrencySelectionInputInteractorProtocol? {get set}
     var view: CurrencySelectionViewProtocol? {get set}
-    var wireframe: CurrencySelectionRouterProtocol? {get set}
+    var router: CurrencySelectionRouterProtocol? {get set}
+    
+    func getCurrency()
 }
 
-class CurrencySelectionPresenter {
+class CurrencySelectionPresenter: CurrencySelectionPresenterProtocol {
+    var interactor: CurrencySelectionInputInteractorProtocol?
+    var view: CurrencySelectionViewProtocol?
+    var router: CurrencySelectionRouterProtocol?
+    
+    func getCurrency() {
+        interactor?.getSupportedCurrencies()
+    }
+    
+}
+
+extension CurrencySelectionPresenter: CurrencySelectionOutputInteractorProtocol {
+    func currencyDidFetch(list: [String]) {
+        view?.showCurrency(supportedCurrencyList: list)
+    }
+    
 }

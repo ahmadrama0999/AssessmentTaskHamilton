@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CurrencyView: UIView {
+class CurrencyView: MyControl {
     let currencyLabel: UILabel = {
         let label = UILabel()
         label.textColor = .black

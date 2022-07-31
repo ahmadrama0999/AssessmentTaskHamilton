@@ -14,27 +14,3 @@ extension UIView {
         NSLayoutConstraint.activate(constraints)
     }
 }
-
-extension UIView {
-    private struct TapClosureHolder {
-        static var _closure:()->() = {}
-    }
-
-    private var tapClosure: () -> () {
-        get { return TapClosureHolder._closure }
-        set { TapClosureHolder._closure = newValue }
-    }
-
-    func tapClosure(closure: @escaping ()->()) {
-        self.tapClosure = closure
-
-        isUserInteractionEnabled = true
-        let tap = UITapGestureRecognizer(target: self, action: #selector(onClickAction))
-        addGestureRecognizer(tap)
-    }
-
-    @objc private func onClickAction() {
-        tapClosure()
-    }
-}
-

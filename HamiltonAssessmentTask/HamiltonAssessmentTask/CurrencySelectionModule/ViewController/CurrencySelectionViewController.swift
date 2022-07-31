@@ -7,20 +7,23 @@
 
 import UIKit
 
-protocol CurrencySelectionViewProtocol: NSObject {
+protocol CurrencySelectionViewProtocol {
+    var presenter: CurrencySelectionPresenterProtocol? { get set }
+
+    func showCurrency(supportedCurrencyList: [String])
 }
 
-class CurrencySelectionViewController: UIViewController {
+class CurrencySelectionViewController: UIViewController, CurrencySelectionViewProtocol {
+    
+    var presenter: CurrencySelectionPresenterProtocol?
     
     private let currentCurrencyView: CurrencyView = {
         let view = CurrencyView()
-        view.currencyLabel.text = "Dol"
         return view
     }()
     
     private let targetCurrencyView: CurrencyView = {
         let view = CurrencyView()
-        view.currencyLabel.text = "GBP"
         return view
     }()
     
@@ -63,9 +66,21 @@ class CurrencySelectionViewController: UIViewController {
         return textField
     }()
     
+    private var currencyList: [String] = []
+    private var currentSelectedCurrency: String? {
+        willSet {
+            currentCurrencyView.currencyLabel.text = newValue
+        }
+    }
+    private var targetSelectedCurrency: String? {
+        willSet {
+            targetCurrencyView.currencyLabel.text = newValue
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         view.backgroundColor = .white
         [currentCurrencyView, arrowImageView, targetCurrencyView].forEach(horizontalStackView.addArrangedSubview)
         
@@ -98,10 +113,58 @@ class CurrencySelectionViewController: UIViewController {
             amountLabel.bottomAnchor.constraint(equalTo: amountTextField.topAnchor, constant: -16),
             amountLabel.heightAnchor.constraint(equalToConstant: 40)
         ])
+        
+        presenter?.getCurrency()
+        createPickerView()
+        addKeyboardHandler()
+    }
+    
+    private func addKeyboardHandler() {
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    private func createPickerView() {
+        
+        currentCurrencyView.didTap = {
+            let popupPickerView = PopupPickerView()
+            popupPickerView.display(itemTitles: self.currencyList, doneHandler: {
+                let selectedIndex = popupPickerView.pickerView.selectedRow(inComponent: 0)
+                self.currentSelectedCurrency = self.currencyList[selectedIndex]
+            })
+        }
+        
+        targetCurrencyView.didTap = {
+            let popupPickerView = PopupPickerView()
+            popupPickerView.display(itemTitles: self.currencyList, doneHandler: {
+                let selectedIndex = popupPickerView.pickerView.selectedRow(inComponent: 0)
+                self.targetSelectedCurrency = self.currencyList[selectedIndex]
+            })
+        }
+    }
+    
+    func showCurrency(supportedCurrencyList: [String]) {
+        currencyList = supportedCurrencyList
+        currentSelectedCurrency = currencyList.first
+        targetSelectedCurrency = currencyList.first
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)
         self.view.endEditing(true)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue {
+            if self.view.frame.origin.y == 0 {
+                self.view.frame.origin.y -= keyboardSize.height
+            }
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if self.view.frame.origin.y != 0 {
+            self.view.frame.origin.y = 0
+        }
     }
 }

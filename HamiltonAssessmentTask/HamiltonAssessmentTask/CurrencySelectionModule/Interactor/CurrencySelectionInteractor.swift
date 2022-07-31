@@ -9,16 +9,22 @@ import Foundation
 
 protocol CurrencySelectionInputInteractorProtocol {
     var presenter: CurrencySelectionOutputInteractorProtocol? {get set}
-    func getModel()
+    func getSupportedCurrencies()
 }
 
-protocol CurrencySelectionOutputInteractorProtocol: NSObject {
-    func currencyDidFetch(model: CurrencySelectionModel)
+protocol CurrencySelectionOutputInteractorProtocol {
+    func currencyDidFetch(list: [String])
 }
 
 class CurrencySelectionInteractor: CurrencySelectionInputInteractorProtocol {
-    weak var presenter: CurrencySelectionOutputInteractorProtocol?
+    var presenter: CurrencySelectionOutputInteractorProtocol?
+    private let currencyNetworkClient: CurrencyNetworkProtocol
     
-    func getModel() {
+    init(currencyNetworkClient: CurrencyNetworkProtocol) {
+        self.currencyNetworkClient = currencyNetworkClient
+    }
+    
+    func getSupportedCurrencies() {
+        presenter?.currencyDidFetch(list: ["EUR", "USD", "BGP", "AUD"])
     }
 }

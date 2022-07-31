@@ -27,6 +27,7 @@
 		77313E752895FD72000D1FA7 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E742895FD72000D1FA7 /* NetworkClient.swift */; };
 		77313E782896FE99000D1FA7 /* ConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E772896FE99000D1FA7 /* ConversionModel.swift */; };
 		77313E7A2896FEE6000D1FA7 /* CurrencyNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E792896FEE6000D1FA7 /* CurrencyNetwork.swift */; };
+		77313E7F2897293F000D1FA7 /* MyControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E7E2897293F000D1FA7 /* MyControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		77313E742895FD72000D1FA7 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
 		77313E772896FE99000D1FA7 /* ConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionModel.swift; sourceTree = "<group>"; };
 		77313E792896FEE6000D1FA7 /* CurrencyNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyNetwork.swift; sourceTree = "<group>"; };
+		77313E7E2897293F000D1FA7 /* MyControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +178,7 @@
 				77313E6B2895C084000D1FA7 /* CommonButton.swift */,
 				77313E6D2895C8BA000D1FA7 /* UnderlinedTextField.swift */,
 				77313E6F2895D981000D1FA7 /* CurrencyView.swift */,
+				77313E7E2897293F000D1FA7 /* MyControl.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				77313E702895D981000D1FA7 /* CurrencyView.swift in Sources */,
 				77313E332895B162000D1FA7 /* AppDelegate.swift in Sources */,
 				77313E752895FD72000D1FA7 /* NetworkClient.swift in Sources */,
+				77313E7F2897293F000D1FA7 /* MyControl.swift in Sources */,
 				77313E352895B162000D1FA7 /* SceneDelegate.swift in Sources */,
 				77313E7A2896FEE6000D1FA7 /* CurrencyNetwork.swift in Sources */,
 				77313E4E2895B4D8000D1FA7 /* CurrencySelectionRouter.swift in Sources */,
