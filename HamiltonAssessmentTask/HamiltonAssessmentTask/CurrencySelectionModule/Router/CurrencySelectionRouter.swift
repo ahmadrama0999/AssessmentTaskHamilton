@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+protocol CurrencySelectionRouterProtocol: NSObject {
+}
+
+class CurrencySelectionRouter {
+    
+}

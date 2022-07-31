@@ -7,3 +7,5 @@
 */
 
 "calculate" = "Calculate";
+"amount_with_сolon" = "Amount:";
+"amount_default_placegolder" = "150";

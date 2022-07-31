@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+protocol CurrencySelectionPresenterProtocol: NSObject {
+    var interactor: CurrencySelectionInputInteractorProtocol? {get set}
+    var view: CurrencySelectionViewProtocol? {get set}
+    var wireframe: CurrencySelectionRouterProtocol? {get set}
+}
+
+class CurrencySelectionPresenter {
+}
