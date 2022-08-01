@@ -7,11 +7,18 @@
 
 import Foundation
 
-struct ConversionModel: Codable {
+struct ConversionModel {
+    let baseCode: String
+    let targetCode: String
+    let currentAmount: Double
+    let converisonAmount: Double?
+}
+
+struct ConversionResultModel: Codable {
     let baseCode:String
     let targetCode: String
-    let conversionRate: Double
-    let conversionResult: Double
+    let conversionRate: Double?
+    let conversionResult: Double?
     
     enum CodingKeys: String, CodingKey {
         case baseCode = "base_code"

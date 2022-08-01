@@ -19,5 +19,38 @@
 			</array>
 		</dict>
 	</dict>
+    <key>SupportedCurrencyList</key>
+        <array>
+            <string>USD</string>
+            <string>EUR</string>
+            <string>AED</string>
+            <string>ETB</string>
+            <string>GNF</string>
+            <string>MOP</string>
+            <string>LYD</string>
+            <string>KES</string>
+            <string>JPY</string>
+            <string>MRU</string>
+            <string>MUR</string>
+            <string>NGN</string>
+            <string>NZD</string>
+            <string>PAB</string>
+            <string>PEN</string>
+            <string>QAR</string>
+            <string>RUB</string>
+            <string>SDG</string>
+            <string>SZL</string>
+            <string>GNF</string>
+            <string>TOP</string>
+            <string>UAH</string>
+            <string>VND</string>
+            <string>WST</string>
+            <string>XCD</string>
+            <string>XDR</string>
+            <string>XOF</string>
+            <string>ZAR</string>
+            <string>ZWL</string>
+            <string>ZMW</string>
+        </array>
 </dict>
 </plist>

@@ -10,4 +10,5 @@ import UIKit
 extension UIImage {
     static let downArrow = UIImage(named: "downArrow")!
     static let convertArrow = UIImage(named: "convertArrow")!
+    static let success = UIImage(named: "success")!
 }

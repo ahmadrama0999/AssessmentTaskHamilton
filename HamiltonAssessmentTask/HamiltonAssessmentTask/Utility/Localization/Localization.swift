@@ -11,4 +11,8 @@ enum Localization {
     static let calculate = "calculate".localized
     static let amountWithColon = "amount_with_сolon".localized
     static let amountDefaultPlaceholder = "amount_default_placegolder".localized
+    static func successMessage(currency: String, amount: String) -> String {
+        let localizedString = "success_message".localized
+        return String(format: localizedString, currency, amount)
+    }
 }

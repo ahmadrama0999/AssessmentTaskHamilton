@@ -9,3 +9,4 @@
 "calculate" = "Calculate";
 "amount_with_сolon" = "Amount:";
 "amount_default_placegolder" = "150";
+"success_message" = "Greate, now you have %@ %@ in your bank account";

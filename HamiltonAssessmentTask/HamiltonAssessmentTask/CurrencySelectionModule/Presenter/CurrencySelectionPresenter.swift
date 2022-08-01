@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol CurrencySelectionPresenterProtocol {
     var interactor: CurrencySelectionInputInteractorProtocol? {get set}
@@ -13,9 +14,16 @@ protocol CurrencySelectionPresenterProtocol {
     var router: CurrencySelectionRouterProtocol? {get set}
     
     func getCurrency()
+    func showConversionResultModule(
+        selectedCurrency: String,
+        targetCurrency: String,
+        amount: Double,
+        rootViewController: UIViewController
+    )
 }
 
 class CurrencySelectionPresenter: CurrencySelectionPresenterProtocol {
+    
     var interactor: CurrencySelectionInputInteractorProtocol?
     var view: CurrencySelectionViewProtocol?
     var router: CurrencySelectionRouterProtocol?
@@ -24,6 +32,19 @@ class CurrencySelectionPresenter: CurrencySelectionPresenterProtocol {
         interactor?.getSupportedCurrencies()
     }
     
+    func showConversionResultModule(
+        selectedCurrency: String,
+        targetCurrency: String,
+        amount: Double,
+        rootViewController: UIViewController
+    ) {
+        router?.showConversionResultModule(
+            selectedCurrency: selectedCurrency,
+            targetCurrency: targetCurrency,
+            amount: amount,
+            rootViewController: rootViewController
+        )
+    }
 }
 
 extension CurrencySelectionPresenter: CurrencySelectionOutputInteractorProtocol {

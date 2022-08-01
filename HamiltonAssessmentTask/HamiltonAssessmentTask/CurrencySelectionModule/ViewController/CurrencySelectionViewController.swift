@@ -80,7 +80,14 @@ class CurrencySelectionViewController: UIViewController, CurrencySelectionViewPr
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        configureView()
+        presenter?.getCurrency()
+        createPickerView()
+        addKeyboardHandler()
+        calculateButton.addTarget(self, action: #selector(calculateButtonAction), for: .touchUpInside)
+    }
+    
+    private func configureView() {
         view.backgroundColor = .white
         [currentCurrencyView, arrowImageView, targetCurrencyView].forEach(horizontalStackView.addArrangedSubview)
         
@@ -113,10 +120,6 @@ class CurrencySelectionViewController: UIViewController, CurrencySelectionViewPr
             amountLabel.bottomAnchor.constraint(equalTo: amountTextField.topAnchor, constant: -16),
             amountLabel.heightAnchor.constraint(equalToConstant: 40)
         ])
-        
-        presenter?.getCurrency()
-        createPickerView()
-        addKeyboardHandler()
     }
     
     private func addKeyboardHandler() {
@@ -166,5 +169,23 @@ class CurrencySelectionViewController: UIViewController, CurrencySelectionViewPr
         if self.view.frame.origin.y != 0 {
             self.view.frame.origin.y = 0
         }
+    }
+    
+    @objc func calculateButtonAction() {
+        self.view.endEditing(true)
+        guard
+            let stringAmount = amountTextField.text,
+            let amount = Double(stringAmount),
+            let selectedCurrency = currentSelectedCurrency,
+            let targetCurrency = targetSelectedCurrency
+        else {
+            return
+        }
+        presenter?.showConversionResultModule(
+            selectedCurrency: selectedCurrency,
+            targetCurrency: targetCurrency,
+            amount: amount,
+            rootViewController: self
+        )
     }
 }

@@ -25,9 +25,19 @@
 		77313E702895D981000D1FA7 /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E6F2895D981000D1FA7 /* CurrencyView.swift */; };
 		77313E722895DFA8000D1FA7 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E712895DFA8000D1FA7 /* UIImage+Extensions.swift */; };
 		77313E752895FD72000D1FA7 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E742895FD72000D1FA7 /* NetworkClient.swift */; };
-		77313E782896FE99000D1FA7 /* ConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E772896FE99000D1FA7 /* ConversionModel.swift */; };
+		77313E782896FE99000D1FA7 /* ConversionResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E772896FE99000D1FA7 /* ConversionResultModel.swift */; };
 		77313E7A2896FEE6000D1FA7 /* CurrencyNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E792896FEE6000D1FA7 /* CurrencyNetwork.swift */; };
 		77313E7F2897293F000D1FA7 /* MyControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E7E2897293F000D1FA7 /* MyControl.swift */; };
+		77313E8128972B90000D1FA7 /* UIWindow+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E8028972B90000D1FA7 /* UIWindow+Extensions.swift */; };
+		77313E8328972BC2000D1FA7 /* PopupPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E8228972BC2000D1FA7 /* PopupPickerView.swift */; };
+		77313E8D28972D80000D1FA7 /* ConversionResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E8828972D80000D1FA7 /* ConversionResultPresenter.swift */; };
+		77313E8F28972D80000D1FA7 /* ConversionResultnteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E8C28972D80000D1FA7 /* ConversionResultnteractor.swift */; };
+		77313E9028972D80000D1FA7 /* ConversionResultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E8A28972D80000D1FA7 /* ConversionResultRouter.swift */; };
+		77313E9128972D80000D1FA7 /* ConversionResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E8628972D80000D1FA7 /* ConversionResultViewController.swift */; };
+		77313E9428974CC9000D1FA7 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E9328974CC9000D1FA7 /* SuccessViewController.swift */; };
+		77313E962897AD11000D1FA7 /* SuccessRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E952897AD11000D1FA7 /* SuccessRouter.swift */; };
+		77313E982897AD19000D1FA7 /* SuccessPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E972897AD19000D1FA7 /* SuccessPresenter.swift */; };
+		77313E9A2897AFEE000D1FA7 /* SuccessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77313E992897AFEE000D1FA7 /* SuccessModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,9 +61,19 @@
 		77313E6F2895D981000D1FA7 /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
 		77313E712895DFA8000D1FA7 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		77313E742895FD72000D1FA7 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
-		77313E772896FE99000D1FA7 /* ConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionModel.swift; sourceTree = "<group>"; };
+		77313E772896FE99000D1FA7 /* ConversionResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionResultModel.swift; sourceTree = "<group>"; };
 		77313E792896FEE6000D1FA7 /* CurrencyNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyNetwork.swift; sourceTree = "<group>"; };
 		77313E7E2897293F000D1FA7 /* MyControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyControl.swift; sourceTree = "<group>"; };
+		77313E8028972B90000D1FA7 /* UIWindow+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+Extensions.swift"; sourceTree = "<group>"; };
+		77313E8228972BC2000D1FA7 /* PopupPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPickerView.swift; sourceTree = "<group>"; };
+		77313E8628972D80000D1FA7 /* ConversionResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionResultViewController.swift; sourceTree = "<group>"; };
+		77313E8828972D80000D1FA7 /* ConversionResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionResultPresenter.swift; sourceTree = "<group>"; };
+		77313E8A28972D80000D1FA7 /* ConversionResultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionResultRouter.swift; sourceTree = "<group>"; };
+		77313E8C28972D80000D1FA7 /* ConversionResultnteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionResultnteractor.swift; sourceTree = "<group>"; };
+		77313E9328974CC9000D1FA7 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		77313E952897AD11000D1FA7 /* SuccessRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessRouter.swift; sourceTree = "<group>"; };
+		77313E972897AD19000D1FA7 /* SuccessPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessPresenter.swift; sourceTree = "<group>"; };
+		77313E992897AFEE000D1FA7 /* SuccessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +112,7 @@
 				77313E582895B709000D1FA7 /* Extensions */,
 				77313E462895B3E7000D1FA7 /* CurrencySelectionModule */,
 				77313E762896FE78000D1FA7 /*  ConversionResultModule */,
+				77313E9228974CB7000D1FA7 /* SuccessModule */,
 				77313E322895B162000D1FA7 /* AppDelegate.swift */,
 				77313E342895B162000D1FA7 /* SceneDelegate.swift */,
 				77313E3B2895B163000D1FA7 /* Assets.xcassets */,
@@ -151,6 +172,7 @@
 				77313E592895B71E000D1FA7 /* View+Extensions.swift */,
 				77313E662895BBD6000D1FA7 /* String+Extensions.swift */,
 				77313E712895DFA8000D1FA7 /* UIImage+Extensions.swift */,
+				77313E8028972B90000D1FA7 /* UIWindow+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -179,6 +201,7 @@
 				77313E6D2895C8BA000D1FA7 /* UnderlinedTextField.swift */,
 				77313E6F2895D981000D1FA7 /* CurrencyView.swift */,
 				77313E7E2897293F000D1FA7 /* MyControl.swift */,
+				77313E8228972BC2000D1FA7 /* PopupPickerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,9 +218,56 @@
 		77313E762896FE78000D1FA7 /*  ConversionResultModule */ = {
 			isa = PBXGroup;
 			children = (
-				77313E772896FE99000D1FA7 /* ConversionModel.swift */,
+				77313E8B28972D80000D1FA7 /* Interactor */,
+				77313E8928972D80000D1FA7 /* Router */,
+				77313E8728972D80000D1FA7 /* Presenter */,
+				77313E8528972D80000D1FA7 /* ViewController */,
+				77313E772896FE99000D1FA7 /* ConversionResultModel.swift */,
 			);
 			path = " ConversionResultModule";
+			sourceTree = "<group>";
+		};
+		77313E8528972D80000D1FA7 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				77313E8628972D80000D1FA7 /* ConversionResultViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		77313E8728972D80000D1FA7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				77313E8828972D80000D1FA7 /* ConversionResultPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		77313E8928972D80000D1FA7 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				77313E8A28972D80000D1FA7 /* ConversionResultRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		77313E8B28972D80000D1FA7 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				77313E8C28972D80000D1FA7 /* ConversionResultnteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		77313E9228974CB7000D1FA7 /* SuccessModule */ = {
+			isa = PBXGroup;
+			children = (
+				77313E9328974CC9000D1FA7 /* SuccessViewController.swift */,
+				77313E952897AD11000D1FA7 /* SuccessRouter.swift */,
+				77313E972897AD19000D1FA7 /* SuccessPresenter.swift */,
+				77313E992897AFEE000D1FA7 /* SuccessModel.swift */,
+			);
+			path = SuccessModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,17 +347,27 @@
 				77313E6C2895C084000D1FA7 /* CommonButton.swift in Sources */,
 				77313E502895B4E2000D1FA7 /* CurrencySelectionModel.swift in Sources */,
 				77313E4C2895B4D1000D1FA7 /* CurrencySelectionPresenter.swift in Sources */,
+				77313E982897AD19000D1FA7 /* SuccessPresenter.swift in Sources */,
 				77313E4A2895B4B9000D1FA7 /* CurrencySelectionInteractor.swift in Sources */,
-				77313E782896FE99000D1FA7 /* ConversionModel.swift in Sources */,
+				77313E782896FE99000D1FA7 /* ConversionResultModel.swift in Sources */,
 				77313E652895BAE2000D1FA7 /* Localization.swift in Sources */,
 				77313E6E2895C8BA000D1FA7 /* UnderlinedTextField.swift in Sources */,
 				77313E702895D981000D1FA7 /* CurrencyView.swift in Sources */,
 				77313E332895B162000D1FA7 /* AppDelegate.swift in Sources */,
 				77313E752895FD72000D1FA7 /* NetworkClient.swift in Sources */,
+				77313E8328972BC2000D1FA7 /* PopupPickerView.swift in Sources */,
 				77313E7F2897293F000D1FA7 /* MyControl.swift in Sources */,
+				77313E8F28972D80000D1FA7 /* ConversionResultnteractor.swift in Sources */,
+				77313E8128972B90000D1FA7 /* UIWindow+Extensions.swift in Sources */,
+				77313E9028972D80000D1FA7 /* ConversionResultRouter.swift in Sources */,
+				77313E9428974CC9000D1FA7 /* SuccessViewController.swift in Sources */,
 				77313E352895B162000D1FA7 /* SceneDelegate.swift in Sources */,
+				77313E8D28972D80000D1FA7 /* ConversionResultPresenter.swift in Sources */,
+				77313E9128972D80000D1FA7 /* ConversionResultViewController.swift in Sources */,
+				77313E9A2897AFEE000D1FA7 /* SuccessModel.swift in Sources */,
 				77313E7A2896FEE6000D1FA7 /* CurrencyNetwork.swift in Sources */,
 				77313E4E2895B4D8000D1FA7 /* CurrencySelectionRouter.swift in Sources */,
+				77313E962897AD11000D1FA7 /* SuccessRouter.swift in Sources */,
 				77313E672895BBD6000D1FA7 /* String+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

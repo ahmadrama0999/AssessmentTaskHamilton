@@ -10,7 +10,7 @@ import Foundation
 protocol CurrencyNetworkProtocol {
     var apiKey: String { get }
     var mainURL: String { get }
-    func fetchPairConversion(baseCurrency: String, targetCurrency: String, amount: Double, completion: @escaping (Result<ConversionModel?, Error>) -> Void)
+    func fetchPairConversion(baseCurrency: String, targetCurrency: String, amount: Double, completion: @escaping (Result<ConversionResultModel?, Error>) -> Void)
 }
 
 class CurrencyNetworkClient: NetworkClient, CurrencyNetworkProtocol {
@@ -30,9 +30,9 @@ class CurrencyNetworkClient: NetworkClient, CurrencyNetworkProtocol {
     let apiKey = "2eef1405ef2acbf949238745"
     let mainURL = "https://v6.exchangerate-api.com/v6/"
     
-    func fetchPairConversion(baseCurrency: String, targetCurrency: String, amount: Double, completion: @escaping (Result<ConversionModel?, Error>) -> Void) {
+    func fetchPairConversion(baseCurrency: String, targetCurrency: String, amount: Double, completion: @escaping (Result<ConversionResultModel?, Error>) -> Void) {
         let urlString = mainURL + apiKey + RequestType.pair + baseCurrency + "/" + targetCurrency + "/" + amount.description
-        request(type: ConversionModel.self, urlString: urlString, completion: { result in
+        request(type: ConversionResultModel.self, urlString: urlString, completion: { result in
             completion(result)
         })
     }

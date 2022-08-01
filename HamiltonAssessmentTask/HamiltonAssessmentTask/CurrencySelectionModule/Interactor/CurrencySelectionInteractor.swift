@@ -1,5 +1,5 @@
 //
-//  CurrencySelectionModel.swift
+//  CurrencySelectionInteractor.swift
 //  HamiltonAssessmentTask
 //
 //  Created by Ramin Akhmad on 30.07.2022.
@@ -25,6 +25,11 @@ class CurrencySelectionInteractor: CurrencySelectionInputInteractorProtocol {
     }
     
     func getSupportedCurrencies() {
-        presenter?.currencyDidFetch(list: ["EUR", "USD", "BGP", "AUD"])
+        presenter?.currencyDidFetch(list: fetchSupportedCurrency() ?? [])
+    }
+    
+    private func fetchSupportedCurrency() -> [String]? {
+        let list = Bundle.main.object(forInfoDictionaryKey: "SupportedCurrencyList") as? [String]
+        return list
     }
 }

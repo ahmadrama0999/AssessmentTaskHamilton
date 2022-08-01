@@ -11,6 +11,12 @@ import UIKit
 protocol CurrencySelectionRouterProtocol {
     
     static func createCurrencySelectionModule() -> UIViewController
+    func showConversionResultModule(
+        selectedCurrency: String,
+        targetCurrency: String,
+        amount: Double,
+        rootViewController: UIViewController
+    )
 }
 
 class CurrencySelectionRouter: CurrencySelectionRouterProtocol {
@@ -29,5 +35,17 @@ class CurrencySelectionRouter: CurrencySelectionRouterProtocol {
         return viewController
     }
     
-    
+    func showConversionResultModule(
+        selectedCurrency: String,
+        targetCurrency: String,
+        amount: Double,
+        rootViewController: UIViewController
+    ) {
+        let vc = ConversionResultRouter.createConversionResultModule(
+            selectedCurrency: selectedCurrency,
+            targetCurrency: targetCurrency,
+            amount: amount
+        )
+        rootViewController.navigationController?.pushViewController(vc, animated: true)
+    }
 }
