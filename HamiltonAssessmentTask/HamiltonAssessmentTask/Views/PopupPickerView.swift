@@ -71,7 +71,7 @@ public class PopupPickerView: UIView {
         doneButton.rightAnchor.constraint(equalTo: headerView.rightAnchor, constant: -16).isActive = true
         doneButton.bottomAnchor.constraint(equalTo: headerView.bottomAnchor).isActive = true
         doneButton.topAnchor.constraint(equalTo: headerView.topAnchor).isActive = true
-        doneButton.setTitle("Done", for: .normal)
+        doneButton.setTitle(Localization.done, for: .normal)
         doneButton.addTarget(self, action: #selector(done), for: .touchUpInside)
         
         cancelButton = UIButton(type: .system)
@@ -80,7 +80,7 @@ public class PopupPickerView: UIView {
         cancelButton.leftAnchor.constraint(equalTo: headerView.leftAnchor, constant: 16).isActive = true
         cancelButton.bottomAnchor.constraint(equalTo: headerView.bottomAnchor).isActive = true
         cancelButton.topAnchor.constraint(equalTo: headerView.topAnchor).isActive = true
-        cancelButton.setTitle("Cancel", for: .normal)
+        cancelButton.setTitle(Localization.cancel, for: .normal)
         cancelButton.addTarget(self, action: #selector(cancel), for: .touchUpInside)
     }
     

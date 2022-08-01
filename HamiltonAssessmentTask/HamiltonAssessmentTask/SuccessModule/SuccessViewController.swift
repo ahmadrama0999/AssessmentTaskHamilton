@@ -26,7 +26,6 @@ class SuccessViewController: UIViewController, SuccessViewProtocol {
        let label = UILabel()
         label.numberOfLines = 0
         label.font = .boldSystemFont(ofSize: 16)
-        label.text = "YOUR MONEY"
         label.textColor = .black
         label.textAlignment = .center
         return label

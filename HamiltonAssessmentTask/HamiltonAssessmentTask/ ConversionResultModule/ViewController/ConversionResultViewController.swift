@@ -52,7 +52,7 @@ class ConversionResultViewController: UIViewController, ConversionResultViewProt
         label.textColor = .lightGray
         label.textAlignment = .center
         label.numberOfLines = 1
-        label.text = "Presedes"
+        label.text = Localization.presedes
         return label
     }()
     
@@ -67,7 +67,7 @@ class ConversionResultViewController: UIViewController, ConversionResultViewProt
     
     private let convertButton: UIButton = {
         let button = CommonButoon()
-        button.setTitle("Convert", for: [])
+        button.setTitle(Localization.convert, for: [])
         return button
     }()
     
@@ -123,7 +123,7 @@ class ConversionResultViewController: UIViewController, ConversionResultViewProt
                 timer.invalidate()
                 self?.navigationController?.popToRootViewController(animated: true)
             } else if let seconds = self?.seconds {
-                self?.timerLabel.text = seconds.description + "sec left"
+                self?.timerLabel.text = seconds.description + Localization.secLeft
             }
         }
     }

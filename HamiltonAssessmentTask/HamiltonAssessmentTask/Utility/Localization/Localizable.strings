@@ -10,3 +10,8 @@
 "amount_with_сolon" = "Amount:";
 "amount_default_placegolder" = "150";
 "success_message" = "Greate, now you have %@ %@ in your bank account";
+"presedes" = "Presedes";
+"convert" = "Convert";
+"sec_left" = "sec left";
+"done" = "Done";
+"cancel" = "Cancel";

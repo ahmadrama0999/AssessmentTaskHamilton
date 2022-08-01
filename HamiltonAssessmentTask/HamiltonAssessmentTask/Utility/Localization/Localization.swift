@@ -15,4 +15,9 @@ enum Localization {
         let localizedString = "success_message".localized
         return String(format: localizedString, currency, amount)
     }
+    static let presedes = "presedes".localized
+    static let convert = "convert".localized
+    static let secLeft = "sec_left".localized
+    static let done = "done".localized
+    static let cancel = "cancel".localized
 }
