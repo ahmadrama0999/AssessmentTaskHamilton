@@ -121,6 +121,7 @@ class ConversionResultViewController: UIViewController, ConversionResultViewProt
             self?.seconds -= 1
             if self?.seconds == 0 {
                 timer.invalidate()
+                self?.navigationController?.popToRootViewController(animated: true)
             } else if let seconds = self?.seconds {
                 self?.timerLabel.text = seconds.description + "sec left"
             }
